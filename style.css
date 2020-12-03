@@ -1,0 +1,43 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.5rem;
+    height: 100%;
+    width: 100%;
+    /* background-color: aqua; */
+}
+header{
+    /* height: 100%;
+    width:100%; */
+    background-color: antiquewhite;
+    /* overflow: hidden; */
+    /* position: absolute; */
+}
+
+main{
+    background-color: beige;
+    display: grid;
+    /* grid-row-start: 2; */
+    /* grid-row-end: 3; */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-area: "l-colum r-column";
+}
+
+main> section.left-column{
+    grid: 'l-column';
+}
+
+main> section.right-column{
+    grid:'r-column';
+}
+
+footer{
+    background-color: brown;
+}
