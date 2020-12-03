@@ -30,3 +30,5 @@ function insertTag(inputs) {
     let text = document.createTextNode(inputs);  //basically all the string --> quotes
     return tag.appendChild(text);    //<p> life is great </p>
 }
+
+randomQuote(); //need to call the function
