@@ -1,4 +1,7 @@
 
+//**************************/
+//RANDOM QUOTE GENERATOR
+//**************************/
 //api call to get the random quote
 async function randomQuote() {
     let res = await fetch('https://api.quotable.io/random');
@@ -32,3 +35,31 @@ function insertTag(inputs) {
 }
 
 randomQuote(); //need to call the function
+//**************************/
+//**************************/
+
+
+//**************************/
+//LIGHT THEME/DARK THEME
+//**************************/
+function changeDisplay() {
+    if (document.body.style.backgroundColor === 'blue') {
+        darkTheme();
+    } else {
+        lightTheme();
+    }
+}
+
+//changing background to light theme
+function lightTheme() {
+    document.body.style.backgroundColor = 'blue';
+    document.body.style.color = "white";
+}
+
+//changing background to dark theme
+function darkTheme() {
+    document.body.style.backgroundColor = 'white';
+    document.body.style.color = "black";
+}
+//**************************/
+//**************************/
