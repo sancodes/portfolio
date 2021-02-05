@@ -5,9 +5,9 @@
 
 window.onload = function () {
     Particles.init({
-        selector: '.background',
+        selector: '.animated-particle-background',
         speed: 0.3,
-        sizeVariations: 4,
+        sizeVariations: 3,
         connectParticles: true,
     });
 };
@@ -18,7 +18,6 @@ function pause() {
 function resume() {
     particles.resumeAnimation();
 }
-
 //**************************/
 //**************************/
 
@@ -28,7 +27,6 @@ function resume() {
 // Text Animate
 //**************************/
 
-// function([string1, string2],target id,[color1,color2])    
 function textAnimate(wordsArray, idParam) {
     let letterCount = 1; //set to 1 to work with substring --> initial display will need at least 1 length  
     let letterEnd = false;
