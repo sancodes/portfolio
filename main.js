@@ -9,15 +9,10 @@ window.onload = function () {
         speed: 0.3,
         sizeVariations: 3,
         connectParticles: true,
+        // color: '#0fffff'
+        color: ['#0fffff', '#e8c9d0', '#fdfcfc']
     });
 };
-function pause() {
-    particles.pauseAnimation();
-}
-// E.g. gets called on a button click
-function resume() {
-    particles.resumeAnimation();
-}
 //**************************/
 //**************************/
 
