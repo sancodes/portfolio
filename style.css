@@ -15,27 +15,56 @@ body{
 header{
     height: 100vh;
     width: 100vw;
-    background-color: antiquewhite;
+    background-color: rgb(187, 104, 79);
   
 }
 
-/* i need to fix below */
-@import url(https://fonts.googleapis.com/css?family=Khula:700);
+.carousel{
+    background-color: azure;
+    display: flex;
+    height: 100%;
+    width: 100%
+}
 
+.carousel-button-nav{
+    background-color: aqua;
+}
+
+.carousel-item{
+    background-color: blue;
+    display: flex;
+    height: 100%;
+    width: 100%
+}
+
+.carousel-item-1> .carousel-item-image{
+    background-color: rgb(169, 250, 77);
+    height: 100%;
+    width: 100%;
+    /* background-image: url('https://www.imagesource.com/wp-content/uploads/2019/06/Rio.jpg'); */
+    
+}
+
+.carousel-item-1> .carousel-item-info{
+    background-color:rgb(175, 72, 167);
+    height: 100%;
+    width: 100%
+}
+/* see below */
 .hidden {
   opacity:0;
 }
-.background {
+.animate-particle-background {
   
     position :absolute;
   
-    display: block;
+    /* display: block;
   
     top: 0;
   
     left: 0;
   
-    z-index: 0;
+    z-index: 0; */
 }
 
 .text-animate-container {
@@ -43,11 +72,11 @@ header{
   font-family:Khula;
   font-size:4em;
   text-align:center;
-  height:200px;
-  width:600px;
+  height:12rem;
+  width:37rem;
   display:block;
   position:absolute;
-  color:rgb(44, 39, 39);
+  color:rgb(207, 144, 144);
   top:0;
   bottom:0;
   left:0;
@@ -61,6 +90,7 @@ header{
   left:10px;
 }
 /* i need to fix above */
+
 main{
     background-color: beige;
     display: grid;
@@ -81,4 +111,33 @@ main> section.right-column{
 
 footer{
     background-color: brown;
+}
+
+@media only screen and (max-width:320px){
+    header{
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(187, 104, 79);
+    }
+    .animated-particle-background{
+        height:100vh;
+        width:100vw;
+    }
+    .text-animate-container {
+ 
+        font-family:Khula;
+        font-size:2em;
+        text-align:center;
+        height:6rem;
+        width:10rem;
+        display:block;
+        position:absolute;
+        color:rgb(207, 144, 144);
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+        margin:auto;
+    }
+
 }
