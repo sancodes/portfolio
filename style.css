@@ -19,6 +19,30 @@ header{
   
 }
 
+
+nav> ul{
+    display: flex;
+    justify-content:space-evenly;
+    list-style-type: none;
+    align-items: stretch;
+}
+
+nav> ul > li{
+    padding: 0 4rem;
+    float:right;
+}
+
+li > a{
+    text-decoration: none;
+    transition: 1s;
+}
+
+a:hover{
+    color:rgb(185, 56, 56);
+    text-decoration: underline;
+    opacity:0.6;
+}
+
 .carousel{
     background-color: azure;
     display: flex;
@@ -93,6 +117,7 @@ header{
   right:0;
   margin:auto;
 }
+
 .underscore {
   display:inline-block;
   position:relative;
