@@ -169,33 +169,35 @@ function totalProjectItems() {
 }
 
 let rotation = 1;
+let increment = rotation;
 let max = totalProjectItems();
+let left = false;
 
 function leftButton() {
 
-    //as the left buttoon is clicked hide the curent project
+    //need to first hide the current item so that i can bring in the next item
     hideProject();
-    //if the rotation is 0 then just make it point to the end of the projects
-    if (rotation < 1) {
+
+    if (rotation === 1) {
         rotation = max;
     } else {
-        rotation = rotation - 1;
+        rotation -= 1;
     }
 
-
-    //show the next project
+    //after the item is hid, next item should appear
     showProject();
 }
 
 function rightButton() {
-
+    //need to first hide the current item so that i can bring in the next item
     hideProject();
-    //if rotation is greter than max then just reset the rotation to 1
-    if (rotation > max) {
+
+    if (rotation === max) {
         rotation = 1;
     } else {
-        rotation = rotation + 1;
+        rotation += 1;
     }
+    //after the item is hid, next item should appear
     showProject();
 }
 
@@ -205,3 +207,4 @@ function hideProject() {
 function showProject() {
     document.getElementById('carousel-item-' + rotation).classList.remove('hide');
 }
+
