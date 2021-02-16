@@ -162,3 +162,46 @@ function darkTheme() {
 //**************************/
 
 
+//get total project items
+function totalProjectItems() {
+    let totalItems = document.getElementsByClassName('carousel-item').length;
+    return totalItems;
+}
+
+let rotation = 1;
+let max = totalProjectItems();
+
+function leftButton() {
+
+    //as the left buttoon is clicked hide the curent project
+    hideProject();
+    //if the rotation is 0 then just make it point to the end of the projects
+    if (rotation < 1) {
+        rotation = max;
+    } else {
+        rotation = rotation - 1;
+    }
+
+
+    //show the next project
+    showProject();
+}
+
+function rightButton() {
+
+    hideProject();
+    //if rotation is greter than max then just reset the rotation to 1
+    if (rotation > max) {
+        rotation = 1;
+    } else {
+        rotation = rotation + 1;
+    }
+    showProject();
+}
+
+function hideProject() {
+    document.getElementById('carousel-item-' + rotation).classList.add('hide');
+}
+function showProject() {
+    document.getElementById('carousel-item-' + rotation).classList.remove('hide');
+}
