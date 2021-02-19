@@ -1,98 +1,100 @@
-*{
-    padding:0;
-    margin:0;
-    box-sizing: border-box;
-}
-html{
-    font-size: 62.5%;
-}
-body{
-    font-size: 1.5rem;
-    height: 100%;
-    width: 100%;
-    /* background-color: aqua; */
-}
-header{
-    height: 100vh;
-    width: 100vw;
-    background-color: rgb(187, 104, 79);
-  
+:root {
+  --text-animate-color: rgb(187, 104, 79);
+  --default-font-size: 62.5%;
+  --font-size: 2.3rem;
+  --bg-color: rgb(187, 104, 79);
 }
 
-
-nav> ul{
-    display: flex;
-    justify-content:space-evenly;
-    list-style-type: none;
-    align-items: stretch;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.5rem;
+  height: 100%;
+  width: 100%;
+  /* background-color: aqua; */
+}
+header {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(187, 104, 79);
 }
 
-nav> ul > li{
-    padding: 0 4rem;
-    float:right;
+nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  align-items: stretch;
 }
 
-li > a{
-    text-decoration: none;
-    transition: 1s;
+nav > ul > li {
+  padding: 0 4rem;
+  float: right;
 }
 
-a:hover{
-    color:rgb(185, 56, 56);
-    text-decoration: underline;
-    opacity:0.6;
+li > a {
+  text-decoration: none;
+  transition: 1s;
 }
 
-.carousel{
-    background-color: azure;
-    display: flex;
-    height: 100%;
-    width: 100%
+a:hover {
+  color: rgb(185, 56, 56);
+  text-decoration: underline;
+  opacity: 0.6;
 }
 
-.carousel-button-nav{
-    background-color: aqua;
-    position: absolute;
-    
+.carousel {
+  background-color: azure;
+  display: flex;
+  height: 100%;
+  width: 100%;
 }
 
-.carousel-item{
-    background-color: blue;
-    display: flex;
-    height: 100%;
-    width: 100%;
-
+.carousel-button-nav {
+  background-color: aqua;
+  position: absolute;
 }
 
-.hide{
-    visibility: hidden;
-    display:none;
+.carousel-item {
+  background-color: blue;
+  display: flex;
+  height: 100%;
+  width: 100%;
 }
 
-.carousel-item-image{
-    background-color: rgb(248, 250, 245);
-    height: 100%;
-    width: 100%;
-}
-.carousel-item-image>img{
-    height:100%;
-    width: 100%
+.hide {
+  visibility: hidden;
+  display: none;
 }
 
-.carousel-item-info{
-    background-color:rgb(175, 72, 167);
-    height: 100%;
-    width: 100%
+.carousel-item-image {
+  background-color: rgb(248, 250, 245);
+  height: 100%;
+  width: 100%;
+}
+.carousel-item-image > img {
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-item-info {
+  background-color: rgb(175, 72, 167);
+  height: 100%;
+  width: 100%;
 }
 /* see below */
 .hidden {
-  opacity:0;
+  opacity: 0;
 }
 .animate-particle-background {
-  
-    position :absolute;
-  
-    /* display: block;
+  position: absolute;
+
+  /* display: block;
   
     top: 0;
   
@@ -102,78 +104,74 @@ a:hover{
 }
 
 .text-animate-container {
- 
-  font-family:Khula;
-  font-size:4em;
-  text-align:center;
-  height:12rem;
-  width:37rem;
-  display:block;
-  position:absolute;
-  color:rgb(207, 144, 144);
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  margin:auto;
+  font-family: Khula;
+  font-size: 4em;
+  text-align: center;
+  height: 12rem;
+  width: 37rem;
+  display: block;
+  position: absolute;
+  color: rgb(207, 144, 144);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .underscore {
-  display:inline-block;
-  position:relative;
-  top:-0.14em;
-  left:10px;
+  display: inline-block;
+  position: relative;
+  top: -0.14em;
+  left: 10px;
 }
 /* i need to fix above */
 
-main{
-    background-color: beige;
-    display: grid;
-    /* grid-row-start: 2; */
-    /* grid-row-end: 3; */
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-area: "l-colum r-column";
+main {
+  background-color: beige;
+  display: grid;
+  /* grid-row-start: 2; */
+  /* grid-row-end: 3; */
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-area: "l-colum r-column";
 }
 
-main> section.left-column{
-    grid: 'l-column';
+main > section.left-column {
+  grid: "l-column";
 }
 
-main> section.right-column{
-    grid:'r-column';
+main > section.right-column {
+  grid: "r-column";
 }
 
-footer{
-    background-color: brown;
+footer {
+  background-color: brown;
 }
 
-@media only screen and (max-width:320px){
-
-    header{
-        height: 100vh;
-        width: 100vw;
-        background-color: rgb(187, 104, 79);
-    }
-    .animated-particle-background{
-        height:100vh;
-        width:100vw;
-    }
-    .text-animate-container {
- 
-        font-family:Khula;
-        font-size:2em;
-        text-align:center;
-        height:6rem;
-        width:10rem;
-        display:block;
-        position:absolute;
-        color:rgb(207, 144, 144);
-        top:0;
-        bottom:0;
-        left:0;
-        right:0;
-        margin:auto;
-    }
-
+@media only screen and (max-width: 320px) {
+  header {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(187, 104, 79);
+  }
+  .animated-particle-background {
+    height: 100vh;
+    width: 100vw;
+  }
+  .text-animate-container {
+    font-family: Khula;
+    font-size: 2em;
+    text-align: center;
+    height: 6rem;
+    width: 10rem;
+    display: block;
+    position: absolute;
+    color: rgb(207, 144, 144);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
 }
