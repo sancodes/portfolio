@@ -1,19 +1,19 @@
 
-//**************************/
+// **************************/
 // Particle.js
-//**************************/
+// **************************/
 
 window.onload = function () {
     Particles.init({
         selector: '.animated-particle-background',
-        speed: 0.3,
-        sizeVariations: 3,
+        speed: 0.4,
+        sizeVariations: 2,
         connectParticles: true,
         // color: '#0fffff'
-        color: ['#0fffff', '#e8c9d0', '#fdfcfc']
+        color: ['#0fffff', '#e8c9d0', '#fdfcfc', '#3CAC14', '#ffd500', '#e0e2db']
     });
 };
-//**************************/
+// //**************************/
 //**************************/
 
 
@@ -104,8 +104,7 @@ async function randomQuote() {
     let res = await fetch('https://api.quotable.io/random');
     let data = await res.json();
     if (res.ok) {
-
-        insertQuotes(data.content, data.author);
+        insertQuotes(data.content, ' ~' + data.author);
     } else {
         console.log(data.error());
     }
@@ -117,11 +116,12 @@ function insertQuotes(randQuote, author) {
     // quote.innerHTML += `<p> ${randQuote} </p>`;
 
     //gets the element which has the id and then appends the whole 
-    let element = document.getElementById('quotes');
+    let quoteElement = document.getElementById('quotes');
+    let authorElement = document.getElementById('author');
     let quoteTag = insertTag(randQuote);
     let authorTag = insertTag(author);
-    element.appendChild(quoteTag);
-    element.appendChild(authorTag);
+    quoteElement.appendChild(quoteTag);
+    authorElement.appendChild(authorTag);
 }
 
 //responsible only for creating p tag and adding inputs inside that p tag 
@@ -140,7 +140,7 @@ randomQuote(); //need to call the function
 //LIGHT THEME/DARK THEME
 //**************************/
 function changeDisplay() {
-    if (document.body.style.backgroundColor === 'blue') {
+    if (document.body.style.backgroundColor === 'rgb(55, 63, 81)') {
         darkTheme();
     } else {
         lightTheme();
@@ -148,8 +148,10 @@ function changeDisplay() {
 }
 
 //changing background to light theme
+//to change somehow the hex color coding would be translated to rgb. 
+//therefore putting rgb values
 function lightTheme() {
-    document.body.style.backgroundColor = 'blue';
+    document.body.style.backgroundColor = 'rgb(55, 63, 81)';
     document.body.style.color = "white";
 }
 
