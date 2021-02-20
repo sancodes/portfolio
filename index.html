@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Portfolio</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
 
 </head>
@@ -24,37 +26,35 @@
     <div id="animate"></div>
     <nav>
         <ul>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Resume</li>
+            <li><a href="#self-intro">About </a></li>
+            <li><a href="#projects">Projects </a></li>
+            <li><a href="#">Resume </a></li>
         </ul>
     </nav>
     <main>
         <section class="left-column">
-            <article id="quotes">
-
-
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, reprehenderit hic repellat tempore,
-                    voluptatem ipsam maxime facere quia cum explicabo dolorem repellendus sed modi ducimus recusandae
-                    accusantium saepe. Officiis, doloremque.
-                </p>
-            </article>
-            <p>This is where the random quotes will show</p>
-            <article>
-
-            </article>
-        </section>
-        <section class="right-column">
             <article class="about">
                 <h5>About Me</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita nobis quia perferendis placeat
-                    recusandae repellendus ad accusamus laboriosam iusto delectus, temporibus minus fugit mollitia
-                    cupiditate voluptatem sed molestiae aliquam consequatur.</p>
+                <img src="">
+                <p id="self-intro">I am Mun San Bhujel. I hold Associate Degree in Mathematics. <br/>
+                     I am fascinated by numbers and patterns, so, I am pursuing to be a Machine Learning Engineer. <br/>
+                     During free time I surf and play Kalimba. 
+                
+                </p>
             </article>
 
+        </section>
+        <section class="right-column">
+            <article class="dark-light-mode">
+                <button onclick="changeDisplay()"> Dark Mode</button>
+
+            </article>
+            <article class="famous-says">
+                <section id="quotes"></section>
+                <section id="author"></section>
+            </article> 
             <article class="projects">
-                <h5>Projects</h5>
+                <h5 id="projects">Projects</h5>
                 <section class="carousel">
                     <section class="carousel-button-nav">
                         <button class="left" onclick="leftButton()"> &lt; </button>
@@ -110,8 +110,11 @@
     </main>
     <footer>
         <ul>
-            <li>Github</li>
+            <li><a href="https://github.com/sancodes"><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a></li>
+            <li><a href="https://linkedin.com/logintosan"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></li>
+            <li><a href="mailto:munsan14@gmail.com"><i class="fa fa-envelope-square fa-3x" aria-hidden="true"></i></a></li>    
         </ul>
+        <p> Made with &hearts; </p>
     </footer>
 
     <script src="path/to/particles.min.js"></script>
