@@ -131,19 +131,17 @@ h5 {
 }
 
 .carousel {
-  background-color: rgb(53, 151, 151);
   display: flex;
   height: 100%;
   width: 100%;
 }
 
 .carousel-button-nav {
-  background-color: aqua;
   position: absolute;
+  /* right: 0; */
 }
 
 .carousel-item {
-  background-color: blue;
   display: flex;
   height: 100%;
   width: 100%;
@@ -165,9 +163,17 @@ h5 {
 }
 
 .carousel-item-info {
-  background-color: rgb(175, 72, 167);
   height: 100%;
   width: 100%;
+  padding: 0 2rem;
+  text-align: center;
+}
+.carousel-item-title {
+  font-weight: 100;
+  padding: 0 0 0.6rem 0;
+}
+.carousel-item-tech {
+  padding: 0 0 0.04rem 0;
 }
 
 footer {
