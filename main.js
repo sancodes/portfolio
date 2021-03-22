@@ -152,6 +152,10 @@ function changeDisplay() {
 //therefore putting rgb values
 function lightTheme() {
     document.body.style.backgroundColor = 'rgb(55, 63, 81)';
+    let leftColumn = document.querySelector('section.left-column');
+    let rightColumn = document.querySelector('section.right-column');
+    leftColumn.style.backgroundColor = 'rgb(55, 63, 81)';
+    rightColumn.style.backgroundColor = 'rgb(55, 63, 81)';
     document.body.style.color = "white";
 }
 
@@ -159,6 +163,10 @@ function lightTheme() {
 function darkTheme() {
     document.body.style.backgroundColor = 'white';
     document.body.style.color = "black";
+    let leftColumn = document.querySelector('section.left-column');
+    let rightColumn = document.querySelector('section.right-column');
+    leftColumn.style.backgroundColor = 'rgb(231 235 240)';
+    rightColumn.style.backgroundColor = 'rgb(231 235 240)';
 }
 //**************************/
 //**************************/
