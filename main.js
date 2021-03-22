@@ -152,11 +152,18 @@ function changeDisplay() {
 //therefore putting rgb values
 function lightTheme() {
     document.body.style.backgroundColor = 'rgb(55, 63, 81)';
+    document.body.style.color = "white";
+
     let leftColumn = document.querySelector('section.left-column');
     let rightColumn = document.querySelector('section.right-column');
     leftColumn.style.backgroundColor = 'rgb(55, 63, 81)';
     rightColumn.style.backgroundColor = 'rgb(55, 63, 81)';
-    document.body.style.color = "white";
+
+    let navBar = document.querySelector('nav > ul');
+    //looping to make all the nav link white navBar -> li<length> -> a
+    for (let i = 0; i < navBar.children.length; i++){
+        navBar.children[i].childNodes[0].style.color = "white";
+    }
 }
 
 //changing background to dark theme
@@ -167,6 +174,12 @@ function darkTheme() {
     let rightColumn = document.querySelector('section.right-column');
     leftColumn.style.backgroundColor = 'rgb(231 235 240)';
     rightColumn.style.backgroundColor = 'rgb(231 235 240)';
+
+    let navBar = document.querySelector('nav > ul');
+    //looping to make all the nav link white
+    for (let i = 0; i < navBar.children.length; i++){
+        navBar.children[i].childNodes[0].style.color = "black";
+    }
 }
 //**************************/
 //**************************/
