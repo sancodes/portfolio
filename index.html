@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
 
 </head>
@@ -21,14 +21,14 @@
             <section class="underscore" id="uScore">&#95;</section>
         </section>
         <!-- </section> -->
-       
+
     </header>
     <!-- <section id="animate"></section> -->
     <nav>
         <ul>
             <li><a href="#self-intro">About </a></li>
             <li><a href="#projects">Projects </a></li>
-            <li><a href="#">Resume </a></li>
+            <li><a href="./assets/static/resume.pdf" target="_blank">Resume </a></li>
         </ul>
     </nav>
     <main id="grid">
@@ -36,10 +36,10 @@
             <article class="about">
                 <h5>About Me</h5>
                 <img src="">
-                <p id="self-intro">I am Mun San Bhujel. I hold Associate Degree in Mathematics. <br/>
-                     I am fascinated by numbers and patterns, so, I am pursuing to be a Machine Learning Engineer. <br/>
-                     During free time I surf and play Kalimba. 
-                
+                <p id="self-intro">I am Mun San Bhujel. I hold Associate Degree in Mathematics. <br />
+                    I am fascinated by numbers and patterns, so, I am pursuing to be a Machine Learning Engineer. <br />
+                    During free time I surf and play Kalimba.
+
                 </p>
             </article>
 
@@ -52,50 +52,54 @@
             <article class="famous-says">
                 <section id="quotes"></section>
                 <section id="author"></section>
-            </article> 
-            <article class="projects">
-                <h5 id="projects">Projects</h5>
-                <section class="carousel">
-                    <section class="carousel-button-nav">
-                        <button class="left" onclick="leftButton()"> &lt; </button>
-                        <button class="right" onclick="rightButton()"> &gt; </button>
-                    </section>
-                    <section class="carousel-item" id="carousel-item-1">
-                        <section class="carousel-item-image">
-                            <img src="./images/start-screen.png">
-                        </section>
-                        <section class="carousel-item-info">
-                            <section class="carousel-item-container">
-                                <p class="carousel-item-title"> Balloon Pop</p>
-                                <p class="carousel-item-tech"> HTML CSS JavaScript</p>
-                                <p class="carousel-item-description"> Browser based game: Will you be able to score
-                                    high? </p>
-                                <a href="https://sancodes.github.io/balloon-pop/" class="carousel-item-button"> <i class="fa fa-file-code-o fa-2x" aria-hidden="true"></i></a>
-                            </section>
-                        </section>
-                    </section>
-                    <section class="carousel-item hide" id="carousel-item-2">
-                        <section class="carousel-item-image">
-                            <img src="./images/mock.png">
-                        </section>
-                        <section class="carousel-item-info">
-                            <section class="carousel-item-container">
-                                <p class="carousel-item-title"> Contact Book</p>
-                                <p class="carousel-item-tech"> MongoDB Express.js Node.js</p>    
-                                <p class="carousel-item-description"> Store Contact </p>
-                                <a href="https://github.com/sancodes/contact-book" class="carousel-item-button"> <i class="fa fa-file-code-o fa-2x" aria-hidden="true"></i></a>
-                            </section>
-                        </section>
-                    </section>
+            </article>
 
-
-                </section>
         </section>
 
         </article>
         </section>
     </main>
 
+    <section class="projects">
+        <h5 id="projects">Projects</h5>
+        <section class="carousel">
+            <section class="carousel-button-nav">
+                <button class="left" onclick="leftButton()"> &lt; </button>
+                <button class="right" onclick="rightButton()"> &gt; </button>
+            </section>
+            <section class="carousel-item" id="carousel-item-1">
+                <section class="carousel-item-image">
+                    <img src="./images/start-screen.png">
+                </section>
+                <section class="carousel-item-info">
+                    <section class="carousel-item-container">
+                        <p class="carousel-item-title"> Balloon Pop</p>
+                        <p class="carousel-item-tech"> HTML CSS JavaScript</p>
+                        <p class="carousel-item-description"> Browser based game: Will you be able to score
+                            high? </p>
+                        <a href="https://github.com/sancodes/balloon-pop" class="carousel-item-button"> <i
+                                class="fa fa-file-code-o fa-2x" aria-hidden="true"></i></a>
+                    </section>
+                </section>
+            </section>
+            <section class="carousel-item hide" id="carousel-item-2">
+                <section class="carousel-item-image">
+                    <img src="./images/mock.png">
+                </section>
+                <section class="carousel-item-info">
+                    <section class="carousel-item-container">
+                        <p class="carousel-item-title"> Contact Book</p>
+                        <p class="carousel-item-tech"> MongoDB Express.js Node.js</p>
+                        <p class="carousel-item-description"> Simple Contact Diary to add your loved ones contact
+                            information
+                        </p>
+                        <a href="https://github.com/sancodes/contact-book" class="carousel-item-button"> <i
+                                class="fa fa-file-code-o fa-2x" aria-hidden="true"></i></a>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </section>
     <section class="skills">
         <h1>Technologies I have worked with: </h1>
         <section class="marquee">
@@ -151,9 +155,12 @@
 
     <footer>
         <ul>
-            <li><a href="https://github.com/sancodes"><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a></li>
-            <li><a href="https://linkedin.com/logintosan"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></li>
-            <li><a href="mailto:munsan14@gmail.com"><i class="fa fa-envelope-square fa-3x" aria-hidden="true"></i></a></li>    
+            <li><a href="https://github.com/sancodes"><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="https://linkedin.com/logintosan"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+            </li>
+            <li><a href="mailto:munsan14@gmail.com"><i class="fa fa-envelope-square fa-3x" aria-hidden="true"></i></a>
+            </li>
         </ul>
         <p> Made with &hearts; </p>
     </footer>
